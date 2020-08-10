@@ -11,6 +11,12 @@ documented) [Peach](http://peach.cool/) API.
 4. Run it again to get a list of known API endpoints and a few example
    commands. For more details on the examples, see below.
 
+# Peach Backup
+
+1. Install pug-cli: `npm install pug-cli -g`.
+2. `cd contrib`
+3. `./peach-backup`
+
 # Options
 
 - `-f`: use a different session file (instead of `~/.peach-session`).

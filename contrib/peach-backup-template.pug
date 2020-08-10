@@ -78,3 +78,11 @@ html
                 span.date= new Date(post.createdTime * 1000).toLocaleString()
                 a.permalink(name=post.id, href="#"+post.id)
                   | 🔗
+              p.comments
+                if post.comments
+                  ul
+                    each comment in post.comments
+                      li
+                        span.comment #{comment.author.displayName} @#{comment.author.name}
+                        br
+                        = comment.body
